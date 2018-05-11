@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body onload="carrega()">
+
+	
+	<p id = "demo"></p>
+	<p class="exemplo"></p>
+	<p class="exemplo"></p>
+	<p class="exemplo"></p>
+	
+	<h1 onclick="this.innerHTML = 'Obrigado'">Clique Aqui </h1>
+
+	<h1 onclick="funcao(this)">Achou que nao ia clicar</h1>
+
+	<h1 id = "demo" onmouseover="mouse(this)" onmouseout='mouseout(this)' onclick="funcao(this)"> AEEEEEEE </h1>
+
+	<img id= "imagem" src="imagem.jpg" alt="Texto Alterado">
+
+	<select name="" id="demo" onchange="alt()">
+		<option value="opcao1">opcao 1</option>
+		<option value="opcao2">opcao 2</option>
+		<option value="opcao3">opcao 3</option>
+	</select>	
+
+	<script>
+		console.log(document.getElementsByTagName('p'));
+		//var x = document.getElementsByClassName('exemplo');
+
+		//x[0].innerHTML = 'Teste';
+		//x[2].innerHTML = 'Texto';
+
+		var x = document.querySelectorAll('p.exemplo')
+		document.getElementById('imagem').src = 'Foto.jpg';
+
+		document.write('Isso é um teste');
+		console.log(x);
+
+		//document.getElementById('demo').style.color = red;
+
+		function funcao(e=document.getElementById('demo')){
+			e.innerHTML = 'Achou errado Otario!'
+		}
+
+		function carrega(){
+			alert('Carregou');
+		}
+
+		function alt(){
+
+			alert("opcao alterada");
+		}
+
+		function mouse(e){
+			e.innerHTML = "SEU FRANCISCO";
+		}
+
+		function mouseout(e){
+			e.innerHTML = "AEEEEEEEEE";
+		}
+		
+
+
+		document.getElementById('demo').onclick = funcao;
+	</script>
+	
+</body>
+</html>

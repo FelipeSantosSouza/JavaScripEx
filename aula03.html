@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		//Funcoes
+
+		alerta('Morre diabo');
+
+		var x = 2;
+		x = metade(x);
+		alerta(calc());
+		alert('O resultado da função é: ' + calc());
+
+		function alerta(mensagem){
+			alert(mensagem);
+		}
+
+		function alerta(mensagem, msg){
+			alert (mensagem, msg);
+		}
+
+		function metade(num){
+			return num / 2;
+		}
+		function calc(x=0,y=0,z=0){
+			return x*2+y*2+z;
+		}
+
+
+
+
+	</script>
+</body>
+</html>

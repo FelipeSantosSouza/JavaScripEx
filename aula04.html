@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		//arrays
+
+
+		var frutas = ['laranja','maca','abacaxi'];
+
+		var pessoa = {
+			nome: 'Felipe', 
+			sobrenome:'Santos', 
+			idade:21, 
+
+			andar: function(){
+				alert('andando')
+			}
+		};
+
+		frutas.sort();
+		frutas.push('pitanga');
+		console.log(frutas[frutas.length-1]);
+		frutas.pop();
+		console.log(frutas[frutas.length-1]);
+		frutas.shift();
+		console.log(frutas[0]);
+		console.log(pessoa.nome);
+		console.log(pessoa.andar());
+		console.log(frutas.toString());
+		console.log(frutas.join(' - '));
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.zebrada{
+			background: silver;
+		}
+	</style>
+</head>
+<body>
+
+	<input type="button" value="Avancar" onclick = "window.history.forward();" />
+	<input type="button" value="Voltar" onclick = "window.history.back();" />
+
+	<table class="zebra">
+		<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Fone</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<th>Felipe</th>
+			<th>25479598</th>
+		</tr>
+		<tr>
+			<th>Salvador</th>
+			<th>25479598</th>
+		</tr>
+		<tr>
+			<th>Marcos</th>
+			<th>25479598</th>
+		</tr>
+		<tr>
+			<th>Maria</th>
+			<th>25479598</th>
+		</tr>
+		</tbody>
+
+	
+
+	</table>
+	<script>
+
+		window.onload= function(){
+			var zebrar = document.querySelectorAll('.zebra tbody tr');
+
+			for (var i=0; i<zebrar.length; i+=2){
+				zebrar[i].className = 'zebrada';
+			}
+		}
+		
+	</script>
+	
+</body>
+</html>
